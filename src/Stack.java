@@ -2,12 +2,12 @@ public class Stack {
 
     class Node{
         int value;
-        Node next;
+    Node next;
 
-        Node(int value){
-            this.value = value;
-        }
+    Node(int value){
+        this.value = value;
     }
+}
 
     private Node top;
     private int height;
