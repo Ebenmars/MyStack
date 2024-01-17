@@ -4,7 +4,7 @@ public class Main {
        myStack.push(3);
         myStack.push(11);
         myStack.push(100);
-//        myStack.pop();
+        myStack.pop();
         myStack.viewTop();
         myStack.viewHeight();
         myStack.printStack();
