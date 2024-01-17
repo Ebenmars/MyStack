@@ -1,5 +1,12 @@
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+       Stack myStack = new Stack(4);
+       myStack.push(3);
+        myStack.pop();
+        myStack.viewTop();
+        myStack.viewHeight();
+
+        myStack.printStack();
+
     }
 }
