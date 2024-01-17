@@ -21,7 +21,7 @@ public class Stack {
     public void push(int value){
         Node newNode = new Node(value);
 
-        if(height == 0){
+        if(getHeight()){
            top = newNode;
         }
         else{
@@ -35,7 +35,7 @@ public class Stack {
         //store the value
         Node temp = top;
         //Node poppedNode = null;
-        if(height == 0){
+        if(getHeight()){
             return null;
         }
         else{
@@ -64,12 +64,16 @@ public class Stack {
         }
     }
 
+    public boolean getHeight(){
+        return height == 0;
+    }
+
 
     public void viewTop(){
-        System.out.println("Top " + top.value);
+        System.out.println("Top: " + top.value);
     }
     public void viewHeight(){
-        System.out.println("Height " + height);
+        System.out.println("Height: " + height);
     }
 
 
